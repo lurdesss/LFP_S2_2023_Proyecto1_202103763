@@ -45,24 +45,30 @@ class ExpresionAritmetica(Expresion):
         elif self.tipo == "potencia":
             resultado = math.pow(valor1, valor2)
         elif self.tipo == "raiz":
-            resultado = math.pow(valor1, 1 / valor2)
+            try:
+                resultado = math.pow(valor1, 1 / valor2)
+            except ZeroDivisionError:
+                resultado = "Error: División por cero en valor 2 de .pow"
+                print(resultado)
         elif self.tipo == "division":
             try:
                 resultado = valor1/valor2
             except ZeroDivisionError:
                 resultado = "Error: division por cero"
+                print(resultado)
         elif self.tipo == "inverso":
             try:
                 resultado = 1 / valor1
             except ZeroDivisionError:
                 resultado = "Error: División por cero en inverso"
+                print(resultado)
         elif self.tipo == "mod":
             try:
                 resultado = valor1 % valor2
             except ZeroDivisionError:
                 resultado = "Error: División por cero en mod"
-
-                resultado = math.pow(valor1, 1 / valor2)
+                print(resultado)
+                resultado = math.pow(valor1, 1)
 
         # GRAFICAR
         if arbol == None:
