@@ -41,6 +41,9 @@ Se puede visualizar el menu principal con el que interactuará el ususario en pr
 ### MENU DESPLEGABLE
 ![Menu desplegable](desplegable.PNG)
 ### BOTONES
+###### Boton analizar: analiza archivos .JSON
 ![analizar](analizar.PNG)
+###### Boton errores: genera lista de errores
 ![errores](errores.PNG)
+###### Boton reporte: genera gráfica de operaciones
 ![reporte](reporte.PNG)

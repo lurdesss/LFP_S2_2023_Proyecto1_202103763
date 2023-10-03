@@ -31,6 +31,7 @@ def tokenize_string(input_str, i):
             return [token, i]
         token += char
         i += 1
+    # errores.append(token)
     print("Error: string no cerrado")
 
 
@@ -93,6 +94,14 @@ def tokenize_input(input_str):
         elif char.isdigit():
             number, pos = tokenize_number(input_str[i:], i)
             columna += pos - i
+            i = pos
+            token = Token(number, linea, columna)
+            tokens.append(token)
+        elif char == "-":
+            number, pos = tokenize_number(input_str[i+1:], i+1)
+            numero = number - number
+            number = numero - number
+            columna += pos - (i+1)
             i = pos
             token = Token(number, linea, columna)
             tokens.append(token)
