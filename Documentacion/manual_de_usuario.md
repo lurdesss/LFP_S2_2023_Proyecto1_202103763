@@ -5,7 +5,7 @@ LENGUAJES FORMALES Y DE PROGRAMACIÓN
 SECCIÓN A-
 
 
-# <center> MANUAL TÉCNICO </center>
+# <center> MANUAL DE USUARIO </center>
 
 <center>Nombre: Jennifer Yulissa Lourdes Taperio Manuel</center>
 <center>Carné: 202103763</center>
